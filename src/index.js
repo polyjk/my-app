@@ -25,7 +25,7 @@ import './index.css';
     handleClick(i){
         const squares = this.state.squares.slice();
 
-        if(calculateWinner(squares || squares[i]){
+        if(calculateWinner(squares) || squares[i]){
             return;
         }
 
