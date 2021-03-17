@@ -80,6 +80,17 @@ import './index.css';
   }
   
   class Game extends React.Component {
+
+    constructor(props){
+      super(props);
+      this.state = {
+        histroy: [{
+          squares: Array(9).fill(null),
+        }],
+        xIsNext: true,
+      }
+    }
+
     render() {
       return (
         <div className="game">
